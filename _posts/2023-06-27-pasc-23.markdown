@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "PASC'23"
+date:   2023-06-27 11:00:00 +0200
+categories: archive
+---
+
+The first minisymposium in series took place at PASC'23 in beautiful Davos.
+
+Gathered in a conference room of Congress Center Davos, early adopters of SYCL programming model shared
+their experiences using it for performance and portability for different scientific codes.
+
+[//]: <> (The following was generated with Le Chat, but it works as a placeholder)
+From the intricate world of sparse linear algebra with _Ginkgo_ to the seismic simulations of _SeisSol_,
+the session was a testament to the versatility of SYCL in tackling some of the most demanding computational problems.
+_WarpX_ showcased how SYCL is being harnessed to simulate particle accelerators with unprecedented precision,
+while the _ACTS_ project demonstrated its potential in reconstructing charged particle tracks in high-energy physics experiments.
+
+- **Andrey Alekseenko**, Introduction, [slides](https://doi.org/10.6084/m9.figshare.23646408.v1)
+- **Andrew Myers**, "Heterogeneous Computing with SYCL in WarpX and AMReX", [slides](https://doi.org/10.6084/m9.figshare.23596716.v1)
+- **Ravil Dorozhinskii**, "Combining CUDA and SYCL for Accelerating Earthquake Simulations in SeisSol", [slides](https://doi.org/10.6084/m9.figshare.23635779.v1)
+- **Yu-Hsiang Tsai**, "Experience From Ginkgo Porting to the SYCL Ecosystem", [slides](https://doi.org/10.6084/m9.figshare.23620644.v1)
+- **Attila Krasznahorkay**, "Charged Particle Reconstruction Using SYCL with the Traccc Project", [slides](https://doi.org/10.6084/m9.figshare.23653329.v1)
+
+[The full collection of presentation slides can also be viewed on FigShare](https://figshare.com/collections/PASC_23_Application_Perspective_on_SYCL_a_Modern_Programming_Model_for_Performance_and_Portability/6732306).
+
+The award for the most poignant questions goes to Attila Krasznahorkay.
+

@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "PASC'24"
+date:   2024-06-04 16:00:00 +0200
+categories: archive
+---
+
+The second minisymposium in the series was held at Zurich.
+
+- **Aksel Alpay**, "The Community-Driven AdaptiveCpp SYCL Compiler Project: From High-Level C++ Programming to the Automatic Synthesis of Specialized Kernels"
+- **Andrey Alekseenko**, "GROMACS: Using SYCL for Performance and Portability at Scale", [slides](https://doi.org/10.6084/m9.figshare.28443740.v1)
+- **Salvatore Cielo**, "SYCLing Through the Portability Maze: Adventures in Scientific Application Migration with DPEcho and HemeLB"
+- **Esteban Rangel**, "Optimizing CRK-HACC for Performance Portability Using SYCL"
+
+The award for the best title goes to Salvatore Cielo.
+
