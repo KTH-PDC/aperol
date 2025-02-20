@@ -1,15 +1,10 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-
-$content-width:    70% !default;
-
 // Color Scheme Enhancements
-$text-color:       #333 !default; // Darker text for better contrast
+$text-color:       #030303 !default; // Darker text for better contrast
 $background-color: #f9f9f9 !default; // Slightly off-white background for depth
-// KTH Blue
-$brand-color: #004791 !default;
+$brand-color:      #004791 !default; // KTH Blue
 $grey-color:       #6c757d !default; // Adjust grey color for better contrast
 
 
@@ -23,6 +18,8 @@ $base-font-family: 'Merriweather', serif !default; // Use a serif font for a mor
 // Spacing and Layout Adjustments
 $spacing-unit:     40px !default; // Increase spacing for a more open layout
 
+$content-width:    1200px !default;
+
 @import "minima";
 
 // Additional Styles
@@ -34,10 +31,21 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: $spacing-unit / 3; // Add spacing on top
   line-height: $base-line-height * $base-font-size * 1.6;
 }
+// Hide "Subscribe to RSS" from the main page (does not affect the footer)
 p.rss-subscribe {
-    display: none;
+  display: none;
 }
+// Hide "hamburger" button on the mobile device
+.site-nav {
+  display: none;
+}
+// Make "visited links" brighter
 a:visited {
-    color: darken($brand-color, 5%);
+  color: darken($brand-color, 5%);
+}
+// Make the header border of KTH color
+.site-header {
+  border-top: 5px solid $brand-color;
+  border-bottom: 1px solid $brand-color;
 }
 
