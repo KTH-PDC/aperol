@@ -1,6 +1,8 @@
 ---
 ---
 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 $content-width:    70% !default;
 
 // Color Scheme Enhancements
@@ -8,16 +10,15 @@ $text-color:       #333 !default; // Darker text for better contrast
 $background-color: #f9f9f9 !default; // Slightly off-white background for depth
 // KTH Blue
 $brand-color: #004791 !default;
-
 $grey-color:       #6c757d !default; // Adjust grey color for better contrast
 
 
 // Typography Enhancements
 $base-font-family: 'Merriweather', serif !default; // Use a serif font for a more professional look
-$base-font-size:   18px !default; // Slightly increase the base font size for better readability
-$base-font-weight: 400 !default;
-$small-font-size:  $base-font-size * 0.8 !default; // Adjust small font size proportionally
-$base-line-height: 1.6 !default; // Increase line height for better readability
+//$base-font-size:   16px !default; // Slightly increase the base font size for better readability
+//$base-font-weight: 400 !default;
+//$small-font-size:  $base-font-size * 0.8 !default; // Adjust small font size proportionally
+//$base-line-height: 1.6 !default; // Increase line height for better readability
 
 // Spacing and Layout Adjustments
 $spacing-unit:     40px !default; // Increase spacing for a more open layout
@@ -29,8 +30,14 @@ h1, h2, h3, h4, h5, h6 {
   // color: $brand-color; // Use brand color for headings
   margin-bottom: $spacing-unit / 2; // Add spacing below headings
 }
-
+.site-title {
+  margin-top: $spacing-unit / 3; // Add spacing on top
+  line-height: $base-line-height * $base-font-size * 1.6;
+}
 p.rss-subscribe {
     display: none;
+}
+a:visited {
+    color: darken($brand-color, 5%);
 }
 

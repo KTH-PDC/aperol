@@ -15,7 +15,7 @@ while the _ACTS_ project demonstrated its potential in reconstructing charged pa
 
 [The full collection of presentation slides can also be viewed on FigShare](https://figshare.com/collections/PASC_23_Application_Perspective_on_SYCL_a_Modern_Programming_Model_for_Performance_and_Portability/6732306).
 
-## Minisymposum abstract
+## Minisymposium abstract
 
 Heterogeneous architectures are now common in high-performance computing. As accelerator hardware gets more diverse, HPC applications
 must target architectures from multiple vendors and hardware generations with different capabilities and limitations. The dominance
@@ -29,7 +29,7 @@ specific device architecture when needed. This minisymposium aims to discuss SYC
 developers, sharing the experiences of early adopters and promoting interdisciplinary communication in software engineering for
 modern, performance-portable, and maintainable code.
 
-[Introdutory slides](https://doi.org/10.6084/m9.figshare.23646408.v1)
+[Introductory slides](https://doi.org/10.6084/m9.figshare.23646408.v1)
 
 ## Heterogeneous Computing with SYCL in WarpX and AMReX
 

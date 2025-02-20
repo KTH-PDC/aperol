@@ -8,7 +8,7 @@ categories: minisymposium
 The third minisymposium in the series will be organized at [PASC'25](https://pasc25.pasc-conference.org/) in a small town of Brugg.
 Featuring talks by Peter Thoman, Abhishek Bagusetty, Markus Büttner, and Timothée David--Cléris.
 
-## Minisymposum abstract
+## Minisymposium abstract
 
 HPC and data-intensive computing now stand as the fourth pillar of science. The heterogeneous architectures, primarily GPUs, are a
 staple of HPC. However, the fast pace of development and increasing diversity of hardware bring forth not only new opportunities,

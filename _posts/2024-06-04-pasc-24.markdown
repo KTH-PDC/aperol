@@ -10,7 +10,7 @@ Kick-started by the talk about _AdaptiveCpp_ and the more "fundamental" parts of
 proceeded to discuss the use of SYCL in many areas: from atomic motion modeling with _GROMACS_ to blood flow simulation with _HemeLB_
 to astrophysics and cosmology with _DPEcho_ and _CRK-HACC_.
 
-## Minisymposum abstract
+## Minisymposium abstract
 
 HPC and data-intensive computing now stand as the fourth pillar of science. The integration of machine learning, AI, and HPC techniques,
 combined with the availability of massive amounts of compute resources, holds the promise of revolutionizing scientific computing. However,
@@ -24,8 +24,7 @@ a wide range of hardware accelerators. It has been adopted by several large HPC 
 minisymposium aims to discuss SYCL primarily from the perspective of scientific application developers, sharing the experiences and
 promoting interdisciplinary communication in software engineering for modern, performance-portable, and maintainable code.
 
-## The Community-Driven AdaptiveCpp SYCL Compiler Project: From High-Level C++ Programming to the Automatic Synthesis of Specialized
-Kernels
+## The Community-Driven AdaptiveCpp SYCL Compiler Project: From High-Level C++ Programming to the Automatic Synthesis of Specialized Kernels
 
 Author: **Aksel Alpay** {% orcid 0000-0003-1976-6375 %}
 
