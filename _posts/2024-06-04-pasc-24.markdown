@@ -1,16 +1,95 @@
 ---
 layout: post
-title:  "PASC'24"
-date:   2024-06-04 16:00:00 +0200
-categories: archive
+title: "PASC'24"
+date: 2024-06-04 16:00:00 +0200
+categories: minisymposium
 ---
 
-The second minisymposium in the series was held at Zurich.
+The second minisymposium in the series was held at [PASC'24](https://pasc24.pasc-conference.org/) in lively Zurich.
+Kick-started by the talk about _AdaptiveCpp_ and the more "fundamental" parts of SYCL ecosystem, the session
+proceeded to discuss the use of SYCL in many areas: from atomic motion modeling with _GROMACS_ to blood flow simulation with _HemeLB_
+to astrophysics and cosmology with _DPEcho_ and _CRK-HACC_.
 
-- **Aksel Alpay**, "The Community-Driven AdaptiveCpp SYCL Compiler Project: From High-Level C++ Programming to the Automatic Synthesis of Specialized Kernels"
-- **Andrey Alekseenko**, "GROMACS: Using SYCL for Performance and Portability at Scale", [slides](https://doi.org/10.6084/m9.figshare.28443740.v1)
-- **Salvatore Cielo**, "SYCLing Through the Portability Maze: Adventures in Scientific Application Migration with DPEcho and HemeLB"
-- **Esteban Rangel**, "Optimizing CRK-HACC for Performance Portability Using SYCL"
+## Minisymposum abstract
 
-The award for the best title goes to Salvatore Cielo.
+HPC and data-intensive computing now stand as the fourth pillar of science. The integration of machine learning, AI, and HPC techniques,
+combined with the availability of massive amounts of compute resources, holds the promise of revolutionizing scientific computing. However,
+while fast moving technologies promise many exciting possibilities, they also bring drawbacks and risks. One such risk is proprietary
+tools, walled gardens of vendor libraries and APIs. Scientific communities require standards-based, portable, and interoperable tools
+to program computing systems—from edge to HPC data center to cloud—to achieve the goal of efficiently combining physics-based
+simulations with novel machine learning and AI based methods. SYCL promises to be such a tool, offering interoperability and avoiding
+vendor lock-in, highlighted by it being the cornerstone technology of the SYCLOPS project for development of an open ecosystem for AI
+acceleration. SYCL is a high-level, vendor-agnostic standard for heterogeneous computing with several mature implementations targeting
+a wide range of hardware accelerators. It has been adopted by several large HPC projects as their performance-portability layer. This
+minisymposium aims to discuss SYCL primarily from the perspective of scientific application developers, sharing the experiences and
+promoting interdisciplinary communication in software engineering for modern, performance-portable, and maintainable code.
+
+## The Community-Driven AdaptiveCpp SYCL Compiler Project: From High-Level C++ Programming to the Automatic Synthesis of Specialized
+Kernels
+
+Author: **Aksel Alpay** {% orcid 0000-0003-1976-6375 %}
+
+The SYCL implementation ecosystem currently consists of two main implementations: The commercial and vendor-
+driven DPC++ project, led by Intel, and the independent, community-driven AdaptiveCpp project. AdaptiveCpp
+provides a flexible, portable heterogeneous computing framework with its support for GPUs from Intel, NVIDIA, and
+AMD as well as any LLVM-supported CPU.
+In this presentation, we will discuss how AdaptiveCpp can help users to develop highly performant applications with
+reasonable effort. This includes its ability to provide a low barrier of entry to heterogeneous computing: Its support for
+offloading C++ standard parallelism constructs provides a convenient, high-level model, while frequently outperforming
+vendor compilers. Additionally, we will show how AdaptiveCpp's unique design can automatically synthesize highly-
+specialized kernels from portable code at runtime. This enables AdaptiveCpp to deliver highly competitive performance
+while potentially requiring less interaction with users than other SYCL compilers.
+We argue that community-driven projects such as AdaptiveCpp are crucial to avoid the dangers of vendor lock-in, and
+will show how developers and scientists can engage with AdaptiveCpp and participate in its development, and thus
+help shape it into the tool they want.
+
+## GROMACS: Using SYCL for Performance and Portability at Scale
+
+Author: **Andrey Alekseenko** {% orcid 0000-0003-4906-7241 %}
+
+Molecular dynamics simulations have quickly embraced General-Purpose computing on Graphics Processing Units.
+As GPU performance grew, the strong scaling problem became apparent due to the fixed size of typical biophysical
+systems.
+GROMACS is a widely used molecular dynamics engine, designed for both high performance and portability across
+hardware and software. Originally, when GROMACS 2021 introduced support for SYCL—an open standard for parallel
+computing—it was only compatible with Intel GPUs. Since then, its compatibility has been significantly broadened to
+include GPUs from all three major vendors. Although GROMACS still recommends the CUDA backend for NVIDIA
+devices for optimal performance, SYCL is the recommended option for Intel and AMD GPUs.
+This presentation will share insights from deploying GROMACS with SYCL across both multi-GPU and multi-node
+setups, using Intel oneAPI DPC++ and AdaptiveCpp runtimes. We will explore the challenges encountered and the
+performance levels, underscoring SYCL's potential as an efficient GPU framework.
+
+[Slides](https://doi.org/10.6084/m9.figshare.28443740.v1)
+
+## SYCLing Through the Portability Maze: Adventures in Scientific Application Migration with DPEcho and HemeLB
+
+Authors: **Salvatore Cielo** {% orcid 0000-0002-2019-8187 %}, Alexander Poeppl, Ivan Pribec, Ioannis Zacharoudiou
+
+In our presentation we explore the portability challenges and solutions encountered in adapting scientific applications to heterogeneous
+computing architectures using SYCL. To this end, we present two application porting efforts, HemeLB and DPEcho, spanning different
+scientific domains and requiring different porting strategies. DPEcho is a general relativistic magnetohydrodynamics (GR-MHD) code
+for compact, magnetized astrophysical objects, such as black hole accretion and stellar winds, or MHD waves. DPEcho is a SYCL + MPI
+rewriting of a legacy CPU-only Fortran application, written with the goals of source readability and cross-platform portability in
+mind. At the same time, we achieved a high performance on all tested hardware, and outperformed the original implementation on the
+same CPU architecture. HemeLB is a large-scale Lattice Boltzmann solver developed for simulating blood flow in sparse geometries
+such as the human vasculature system. It cleverly overlaps communication and computation to achieve good scaling on large-scale HPC
+systems. With a CUDA version already available, we pursued SYCL porting using the automatic Data Parallel C++ Compatibility (DPCT)
+tool, and then manually refactored sections of the code to account for differences between programming models. This resulted in a
+unified code tree which can execute on all major GPU architectures.
+
+## Optimizing CRK-HACC for Performance Portability Using SYCL
+
+Author: **Esteban Rangel** {% orcid 0000-0003-2330-9820 %}
+
+In this talk, we discuss the development of the SYCL implementation of CRK-HACC, an extreme-scale cosmological
+simulation code with physics for resolving gas hydrodynamics. We describe our CUDA-to-SYCL migration pipeline for
+producing function objects and detail how we achieved a high level of “performance portability” across GPUs from
+AMD, Intel, and NVIDIA, requiring us to develop an abstraction for multiple “shuffle” operations: the
+`sycl::select_from_group` function from SYCL 2020, a shuffle operation emulated via work-group local memory, and a
+highly specialized shuffle operation implemented for Intel GPUs in assembly (vISA). To facilitate code maintainability
+we also created abstractions for host-side code that is shared across HIP, SYCL, and CUDA. We believe our
+techniques will generalize well to other application domains and provide a balance of maintainability and performance
+portability.
+
+<!-- The award for the best title goes to Salvatore Cielo. -->
 

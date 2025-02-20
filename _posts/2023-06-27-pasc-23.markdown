@@ -1,28 +1,96 @@
 ---
 layout: post
-title:  "PASC'23"
-date:   2023-06-27 11:00:00 +0200
-categories: archive
+title: "PASC'23"
+date: 2023-06-27 11:00:00 +0200
+categories: minisymposium
 ---
 
-The first minisymposium in series took place at PASC'23 in beautiful Davos.
-
+The first minisymposium in series took place at [PASC'23](https://pasc23.pasc-conference.org/) in beautiful Davos.
 Gathered in a conference room of Congress Center Davos, early adopters of SYCL programming model shared
 their experiences using it for performance and portability for different scientific codes.
-
-[//]: <> (The following was generated with Le Chat, but it works as a placeholder)
 From the intricate world of sparse linear algebra with _Ginkgo_ to the seismic simulations of _SeisSol_,
 the session was a testament to the versatility of SYCL in tackling some of the most demanding computational problems.
 _WarpX_ showcased how SYCL is being harnessed to simulate particle accelerators with unprecedented precision,
 while the _ACTS_ project demonstrated its potential in reconstructing charged particle tracks in high-energy physics experiments.
 
-- **Andrey Alekseenko**, Introduction, [slides](https://doi.org/10.6084/m9.figshare.23646408.v1)
-- **Andrew Myers**, "Heterogeneous Computing with SYCL in WarpX and AMReX", [slides](https://doi.org/10.6084/m9.figshare.23596716.v1)
-- **Ravil Dorozhinskii**, "Combining CUDA and SYCL for Accelerating Earthquake Simulations in SeisSol", [slides](https://doi.org/10.6084/m9.figshare.23635779.v1)
-- **Yu-Hsiang Tsai**, "Experience From Ginkgo Porting to the SYCL Ecosystem", [slides](https://doi.org/10.6084/m9.figshare.23620644.v1)
-- **Attila Krasznahorkay**, "Charged Particle Reconstruction Using SYCL with the Traccc Project", [slides](https://doi.org/10.6084/m9.figshare.23653329.v1)
-
 [The full collection of presentation slides can also be viewed on FigShare](https://figshare.com/collections/PASC_23_Application_Perspective_on_SYCL_a_Modern_Programming_Model_for_Performance_and_Portability/6732306).
 
-The award for the most poignant questions goes to Attila Krasznahorkay.
+## Minisymposum abstract
+
+Heterogeneous architectures are now common in high-performance computing. As accelerator hardware gets more diverse, HPC applications
+must target architectures from multiple vendors and hardware generations with different capabilities and limitations. The dominance
+of vendor-specific and proprietary programming models makes writing portable and future-proof code challenging. Like OpenCL,
+SYCL is a standard not controlled by a single vendor. SYCL is still in its early stage, but there already are several quite mature
+implementations of the standard by different groups, targeting a wide range of hardware. It has been adopted by several large HPC
+projects and is the recommended programming framework for upcoming Intel GPU-based supercomputers. SYCL allows accessing low-level
+hardware capabilities while providing a high-level abstraction and the ability to rely on the runtime for data movement and execution
+configuration choice, making it possible to write portable and performant code without compromising the ability to tune for a
+specific device architecture when needed. This minisymposium aims to discuss SYCL from the perspective of scientific application
+developers, sharing the experiences of early adopters and promoting interdisciplinary communication in software engineering for
+modern, performance-portable, and maintainable code.
+
+[Introdutory slides](https://doi.org/10.6084/m9.figshare.23646408.v1)
+
+## Heterogeneous Computing with SYCL in WarpX and AMReX
+
+Authors: **Andrew Myers** {% orcid 0000-0001-8427-8330 %} and Weiqun Zhang {% orcid 0000-0001-8092-1974 %}
+
+WarpX is a time-based electrostatic and electromagnetic Particle-in-Cell code that supports many advanced features such as
+perfectly-matched layers, boosted frame simulations, highly accurate pseudo-spectral solvers, and mesh refinement. It has been applied
+to a range of scientific settings such as plasma-based acceleration, laser-plasma interaction, microelectronics, astrophysical plasmas,
+and more. WarpX is also a highly parallel and highly optimized code that scales to some of the largest supercomputers in the world. For
+its performance and capabilities, WarpX relies on many of the features of the AMReX framework, including a performance portability layer
+that supports execution on NVIDIA, AMD, and Intel GPUs as well as many-core CPUs. In this talk, I will describe how WarpX and AMReX
+achieve performance portability across a variety of heterogenous compute environments, including its use of the SYCL programming model.
+
+[Slides](https://doi.org/10.6084/m9.figshare.23596716.v1)
+
+
+## Combining CUDA and SYCL for Accelerating Earthquake Simulations in SeisSol
+
+Authors: **Ravil Dorozhinskii**, Michael Bader {% orcid 0009-0000-4334-1938 %}, Alice Gabriel {% orcid 0000-0003-0112-8412 %}
+
+SeisSol is a high-performance simulation package designed for large-scale simulations of earthquakes and seismic phenomena. SeisSol is
+based on the discontinuous Galerkin method, the ADER time integration and Local Time Stepping. SeisSol uses a custom Domain Specific
+Language, called YATeTo, to tackle the demand of modeling various wave propagation models as well as providing portability between
+various CPU and GPU architectures from different vendors which have different capabilities and limitations. In this talk, we are going
+to report on 1) our recent results obtained with the SYCL compiler backend of YATeTo, 2) discuss benefits of using SYCL instead of
+OpenMP in the implementation of the dynamic rupture model in SeisSol and thus 3) coupling CUDA/HIP GPU programming models with SYCL.
+
+[Slides](https://doi.org/10.6084/m9.figshare.23635779.v1)
+
+## Experience From Ginkgo Porting to the SYCL Ecosystem
+
+Authors: **Yu-Hsiang Tsai**, Terry Cojean, Tobias Ribizel, Hartwig Anzt
+
+Intel has introduced new GPU architectures into the High-Performance Computing markets and has chosen the SYCL ecosystem for its
+devices. Based on SYCL, they create several extensions to help the coding experience and improve usability. They also provide the
+tools to help port the code from CUDA and measure the performance. Many applications rely on mathematical libraries, so mathematical
+libraries need to be available on these new devices. With the new Exascale machine Aurora using Intel GPU accelerators, Ginkgo,
+which is a sparse linear algebra library, also faces the challenge of porting the code to the new Intel GPUs. Moreover, Ginkgo
+needs to provide competitive performance and good portability. We show the ginkgo portability design such that we can add SYCL to
+our structure. We also share the challenges, concerns, and experiences from porting Ginkgo to SYCL. In the end, we summarize the
+supported functionality on different GPUs from different vendors.
+
+[Slides](https://doi.org/10.6084/m9.figshare.23620644.v1)
+
+## Charged Particle Reconstruction Using SYCL with the Traccc Project
+
+Authors: **Attila Krasznahorkay** {% orcid 0000-0002-6468-1381 %}, Andreas Salzburger, Beomki Yeo, Stephen Nicholas Swatman {% orcid 0000-0002-3747-3229 %}, Joana Niermann, Guilherme Metelo Rita De Almeida
+
+Reconstructing the tracks left by high energy, electrically charged particles in specialised particle detectors is one of the
+most challenging software tasks in modern High Energy Physics. In recent years several projects took it on themselves to find and
+implement track reconstruction algorithms suitable for hardware accelerators. In many cases this lead to algorithmic compromises,
+using simplified descriptions of the detector geometry, input data and magnetic field. The traccc project was started as an R&D
+initiative of the ACTS common track reconstruction project. It aims to demonstrate the feasibility of a complete track reconstruction
+algorithm chain on both traditional CPU, and GPGPU hardware architectures. A large emphasis in the development is put on sharing as
+much code between the CPU and GPGPU implementations as possible, and avoiding algorithmic and physics performance compromises. In
+this talk I will present the state of the art of this R&D project. I will describe its components dedicated to handling well defined
+sub-tasks in the track reconstruction, and I will present performance results with the code. As run on a variety of hardware, with
+the help of the SYCL programming language.
+
+[Slides](https://doi.org/10.6084/m9.figshare.23653329.v1)
+
+
+<!-- The award for the most poignant questions goes to Attila Krasznahorkay. -->
 

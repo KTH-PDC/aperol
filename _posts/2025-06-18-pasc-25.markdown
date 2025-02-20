@@ -1,14 +1,24 @@
 ---
 layout: post
-title:  "PASC'25"
-date:   2025-06-18 16:00:00 +0200
-categories: upcoming
+title: "PASC'25"
+date: 2025-06-18 16:00:00 +0200
+categories: minisymposium
 ---
 
-The third minisymposium in the series was held at a small town of Brugg.
+The third minisymposium in the series will be organized at [PASC'25](https://pasc25.pasc-conference.org/) in a small town of Brugg.
+Featuring talks by Peter Thoman, Abhishek Bagusetty, Markus Büttner, and Timothée David--Cléris.
 
-- Peter Thoman
-- Abhishek Bagusetty
-- Markus Büttner
-- Timothée David--Cléris
+## Minisymposum abstract
+
+HPC and data-intensive computing now stand as the fourth pillar of science. The heterogeneous architectures, primarily GPUs, are a
+staple of HPC. However, the fast pace of development and increasing diversity of hardware bring forth not only new opportunities,
+but also challenges. Proprietary heterogeneous programming models often pose risks due to vendor lock-in, hurting collaboration
+and limiting portability, hence undermining reproducibility in scientific research. SYCL, a vendor-agnostic, C++-based standard for
+heterogeneous computing with several mature implementations for a wide range of hardware accelerators, offers a promising path towards
+vendor-agnostic, high-performance computing. This minisymposium focuses on the experiences of scientific application developers
+using SYCL as a performance-portability solution across different hardware accelerators, fostering a collaborative open-software
+ecosystem. The talks will focus on best practices for developing performance-portable and maintainable code using SYCL, as well as on
+co-development and interaction between the SYCL Working Group and application developers. The aim of this workshop is to contribute
+to the wider adoption of open standards in scientific computing.
+
 
