@@ -5,7 +5,7 @@ date: 2025-06-18 16:00:00 +0200
 categories: minisymposium
 ---
 
-The third minisymposium in the series will be organized at [PASC'25](https://pasc25.pasc-conference.org/) in a small town of Brugg.
+The third minisymposium in the series will be organized at [PASC'25](https://pasc25.pasc-conference.org/) in a town of Brugg.
 Featuring talks by Peter Thoman, Abhishek Bagusetty, Markus Büttner, and Timothée David--Cléris.
 
 ## Minisymposium abstract
@@ -21,4 +21,16 @@ ecosystem. The talks will focus on best practices for developing performance-por
 co-development and interaction between the SYCL Working Group and application developers. The aim of this workshop is to contribute
 to the wider adoption of open standards in scientific computing.
 
+## Coastal Ocean Simulations with Unstructured and Block-Structured Grids on CPUs, GPUs, and FPGAs
+
+Authors: **Markus Büttner** {% orcid 0009-0004-7205-1357 %}, Christoph Alt {% orcid 0000-0001-8897-5205 %}, Tobias Kenter {% orcid 0000-0002-5088-0267 %}, Vadym Aizinger {% orcid 0000-0002-1061-3084 %}
+
+The shallow water equations model fluid flow in regions where the horizontal scale is much larger than the vertical depth. Applications
+of the shallow water equations include the modelling of tides, tsunamis or atmospheric flows. In this talk, we will discuss a
+SYCL implementation of a discontinuous Galerkin discretization for the two dimensional shallow water equations with application
+to coastal ocean simulations. We will first have a brief discussion of the discontinuous Galerkin discretization and important
+performance characteristics of the resulting scheme on unstructured grids. We will then show how this scheme can be implemented in
+SYCL, what abstractions are necessary for different architectures, and highlight differences between compilers and backends. At last,
+we briefly discuss energy efficiency for our code across the tested architectures and give a brief outlook on how block-structured
+grids can be used to improve simulation performance.
 
