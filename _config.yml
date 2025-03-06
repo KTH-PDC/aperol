@@ -18,13 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Application Perspective on SYCL, a Modern Programming Model for Performance and Portability
+title: Application Perspective on SYCL (APerOL)
+tagline: Minisymposium at PASC
 author: Andrey Alekseenko and Szilárd Páll
 # email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   The minisymposium for cross-disciplinary discussion on SYCL as an open standard for performance-portability in scientific high-performance computing, organized at PASC conference since 2023.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://kth-pdc.github.io/aperol" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  jekyll
 

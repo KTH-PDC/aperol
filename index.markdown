@@ -6,7 +6,7 @@ layout: home
 list_title: " "
 ---
 
-"Application Perspective on SYCL, a Modern Programming Model for Performance and Portability" is a series
+"**A**pplication **Per**spective **o**n SYC**L**" (APerOL) is a series
 of minisymposia organized at the [Platform for Advanced Scientific Computing (PASC) Conference](https://www.pasc-conference.org/)
 since 2023.
 
