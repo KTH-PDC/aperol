@@ -21,6 +21,21 @@ ecosystem. The talks will focus on best practices for developing performance-por
 co-development and interaction between the SYCL Working Group and application developers. The aim of this workshop is to contribute
 to the wider adoption of open standards in scientific computing.
 
+## Celerity -- SYCL-based High-Productivity Development at HPC Scale
+
+Author: **Peter Thoman** {% orcid 0000-0002-4028-7451 %}
+
+The vendor-agnostic SYCL standard provides a C++-based foundation for the development of applications targeting heterogeneous
+systems. However, while SYCL supports multiple devices in a single shared memory host system or node, leveraging this support requires
+developers to manually take care of the issues of work splitting and data coherence across devices. Developing for an HPC environment,
+which features a large number of accelerators in a distributed memory cluster, is even more challenging and labor-intensive. As a
+consequence, algorithmic decisions are often difficult to change once taken, reducing the potential for experimenting with different
+approaches at scale. This talk will briefly introduce a subset of SYCL, and demonstrate how the Celerity runtime system extends the
+applicability of single-GPU concepts to clusters, in a manner largely transparent to the programmer. The applicability of this system,
+and its potential for enabling the rapid evaluation of different implementation choices, will be illustrated with scalability studies
+on a set of real-world use cases. Additionally, some SYCL software engineering best practices based on the Celerity development
+experience will be shared.
+
 ## Coastal Ocean Simulations with Unstructured and Block-Structured Grids on CPUs, GPUs, and FPGAs
 
 Authors: **Markus Büttner** {% orcid 0009-0004-7205-1357 %}, Christoph Alt {% orcid 0000-0001-8897-5205 %}, Tobias Kenter {% orcid 0000-0002-5088-0267 %}, Vadym Aizinger {% orcid 0000-0002-1061-3084 %}
@@ -33,4 +48,39 @@ performance characteristics of the resulting scheme on unstructured grids. We wi
 SYCL, what abstractions are necessary for different architectures, and highlight differences between compilers and backends. At last,
 we briefly discuss energy efficiency for our code across the tested architectures and give a brief outlook on how block-structured
 grids can be used to improve simulation performance.
+
+## Experiences with using SYCL for NWChemEx on Exascale Supercomputers
+
+Author: **Abhishek Bagusetty**
+
+The rise of exascale computing offers new possibilities for computational chemistry, particularly in modeling molecular systems. We
+examine the integration of the Coupled Cluster with Single, Double, and Perturbative Triple excitations (CCSD(T)) method within
+the NWChemEx library, using SYCL and oneMKL to ensure portability and performance across exascale hardware. By leveraging oneAPI,
+we create a unified platform that targets heterogeneous systems, including CPUs, GPUs, and accelerators, without sacrificing
+maintainability or performance.
+
+Our work addresses the challenges of porting, debugging, and optimizing algorithms for various exascale hardware used in Department
+of Energy (DOE) facilities, including NVIDIA, AMD, and Intel architectures. Using SYCL’s portability, we achieve efficient
+parallelization across these GPU architectures, ensuring scalability on platforms like NVIDIA A100, AMD MI250, and Intel Ponte Vecchio.
+
+Benchmarks on DOE exascale systems demonstrate the efficiency and scalability of our approach, highlighting the potential of SYCL to
+fully leverage exascale architectures for next-generation quantum chemistry. This work is a key step toward developing exascale-ready
+computational chemistry software that is efficient and portable across high-performance computing platforms.
+
+## Shamrock: Scaling SPH to Exascale for Astrophysics Using SYCL
+
+Author: **Timothée David--Cléris** {% orcid 0000-0001-6696-7917 %}
+
+Shamrock is a native SYCL-based framework designed for numerical astrophysics on exascale architectures. Developed in C++17,
+Shamrock addresses the growing need for efficient and scalable solutions in hydrodynamical simulations for astrophysics. The core
+of the framework utilizes a ray-tracing-inspired parallel tree structure nested within an abstracted domain decomposition. This
+design enables the efficient implementation of the Smoothed Particle Hydrodynamics (SPH) algorithm, providing significant speedups
+for large-scale simulations and scalability across thousands of GPUs.
+
+We chose SYCL for its portability across CPU and GPU vendors, as well as its performance portability, allowing us to maintain the
+same code paths throughout the codebase.
+
+This presentation will introduce Shamrock, its use of SYCL, its performance across multiple vendors and backends, and the reasons
+behind our initial decision to develop the framework with the buffer/accessor model. We will also discuss our migration to the
+Unified Shared Memory (USM) model to achieve finer memory control and reduced latencies.
 
