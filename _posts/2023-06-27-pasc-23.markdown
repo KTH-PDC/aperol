@@ -33,7 +33,7 @@ modern, performance-portable, and maintainable code.
 
 ## Heterogeneous Computing with SYCL in WarpX and AMReX
 
-Authors: **Andrew Myers** {% orcid 0000-0001-8427-8330 %} and Weiqun Zhang {% orcid 0000-0001-8092-1974 %}
+Authors: **Andrew Myers** {% include orcid.html orcid="0000-0001-8427-8330" %} and Weiqun Zhang {% include orcid.html orcid="0000-0001-8092-1974" %}
 
 WarpX is a time-based electrostatic and electromagnetic Particle-in-Cell code that supports many advanced features such as
 perfectly-matched layers, boosted frame simulations, highly accurate pseudo-spectral solvers, and mesh refinement. It has been applied
@@ -48,7 +48,7 @@ achieve performance portability across a variety of heterogenous compute environ
 
 ## Combining CUDA and SYCL for Accelerating Earthquake Simulations in SeisSol
 
-Authors: **Ravil Dorozhinskii**, Michael Bader {% orcid 0009-0000-4334-1938 %}, Alice Gabriel {% orcid 0000-0003-0112-8412 %}
+Authors: **Ravil Dorozhinskii**, Michael Bader {% include orcid.html orcid="0009-0000-4334-1938" %}, Alice Gabriel {% include orcid.html orcid="0000-0003-0112-8412" %}
 
 SeisSol is a high-performance simulation package designed for large-scale simulations of earthquakes and seismic phenomena. SeisSol is
 based on the discontinuous Galerkin method, the ADER time integration and Local Time Stepping. SeisSol uses a custom Domain Specific
@@ -76,7 +76,7 @@ supported functionality on different GPUs from different vendors.
 
 ## Charged Particle Reconstruction Using SYCL with the Traccc Project
 
-Authors: **Attila Krasznahorkay** {% orcid 0000-0002-6468-1381 %}, Andreas Salzburger, Beomki Yeo, Stephen Nicholas Swatman {% orcid 0000-0002-3747-3229 %}, Joana Niermann, Guilherme Metelo Rita De Almeida
+Authors: **Attila Krasznahorkay** {% include orcid.html orcid="0000-0002-6468-1381" %}, Andreas Salzburger, Beomki Yeo, Stephen Nicholas Swatman {% include orcid.html orcid="0000-0002-3747-3229" %}, Joana Niermann, Guilherme Metelo Rita De Almeida
 
 Reconstructing the tracks left by high energy, electrically charged particles in specialised particle detectors is one of the
 most challenging software tasks in modern High Energy Physics. In recent years several projects took it on themselves to find and

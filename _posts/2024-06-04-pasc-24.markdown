@@ -26,7 +26,7 @@ promoting interdisciplinary communication in software engineering for modern, pe
 
 ## The Community-Driven AdaptiveCpp SYCL Compiler Project: From High-Level C++ Programming to the Automatic Synthesis of Specialized Kernels
 
-Author: **Aksel Alpay** {% orcid 0000-0003-1976-6375 %}
+Author: **Aksel Alpay** {% include orcid.html orcid="0000-0003-1976-6375" %}
 
 The SYCL implementation ecosystem currently consists of two main implementations: The commercial and vendor-
 driven DPC++ project, led by Intel, and the independent, community-driven AdaptiveCpp project. AdaptiveCpp
@@ -44,7 +44,7 @@ help shape it into the tool they want.
 
 ## GROMACS: Using SYCL for Performance and Portability at Scale
 
-Author: **Andrey Alekseenko** {% orcid 0000-0003-4906-7241 %}
+Author: **Andrey Alekseenko** {% include orcid.html orcid="0000-0003-4906-7241" %}
 
 Molecular dynamics simulations have quickly embraced General-Purpose computing on Graphics Processing Units.
 As GPU performance grew, the strong scaling problem became apparent due to the fixed size of typical biophysical
@@ -62,7 +62,7 @@ performance levels, underscoring SYCL's potential as an efficient GPU framework.
 
 ## SYCLing Through the Portability Maze: Adventures in Scientific Application Migration with DPEcho and HemeLB
 
-Authors: **Salvatore Cielo** {% orcid 0000-0002-2019-8187 %}, Alexander Poeppl, Ivan Pribec, Ioannis Zacharoudiou
+Authors: **Salvatore Cielo** {% include orcid.html orcid="0000-0002-2019-8187" %}, Alexander Poeppl, Ivan Pribec, Ioannis Zacharoudiou
 
 In our presentation we explore the portability challenges and solutions encountered in adapting scientific applications to heterogeneous
 computing architectures using SYCL. To this end, we present two application porting efforts, HemeLB and DPEcho, spanning different
@@ -78,7 +78,7 @@ unified code tree which can execute on all major GPU architectures.
 
 ## Optimizing CRK-HACC for Performance Portability Using SYCL
 
-Author: **Esteban Rangel** {% orcid 0000-0003-2330-9820 %}
+Author: **Esteban Rangel** {% include orcid.html orcid="0000-0003-2330-9820" %}
 
 In this talk, we discuss the development of the SYCL implementation of CRK-HACC, an extreme-scale cosmological
 simulation code with physics for resolving gas hydrodynamics. We describe our CUDA-to-SYCL migration pipeline for

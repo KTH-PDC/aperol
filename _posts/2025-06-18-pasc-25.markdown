@@ -23,7 +23,7 @@ to the wider adoption of open standards in scientific computing.
 
 ## Celerity -- SYCL-based High-Productivity Development at HPC Scale
 
-Author: **Peter Thoman** {% orcid 0000-0002-4028-7451 %}
+Author: **Peter Thoman** {% include orcid.html orcid="0000-0002-4028-7451" %}
 
 The vendor-agnostic SYCL standard provides a C++-based foundation for the development of applications targeting heterogeneous
 systems. However, while SYCL supports multiple devices in a single shared memory host system or node, leveraging this support requires
@@ -38,7 +38,7 @@ experience will be shared.
 
 ## Coastal Ocean Simulations with Unstructured and Block-Structured Grids on CPUs, GPUs, and FPGAs
 
-Authors: **Markus Büttner** {% orcid 0009-0004-7205-1357 %}, Christoph Alt {% orcid 0000-0001-8897-5205 %}, Tobias Kenter {% orcid 0000-0002-5088-0267 %}, Vadym Aizinger {% orcid 0000-0002-1061-3084 %}
+Authors: **Markus Büttner** {% include orcid.html orcid="0009-0004-7205-1357" %}, Christoph Alt {% include orcid.html orcid="0000-0001-8897-5205" %}, Tobias Kenter {% include orcid.html orcid="0000-0002-5088-0267" %}, Vadym Aizinger {% include orcid.html orcid="0000-0002-1061-3084" %}
 
 The shallow water equations model fluid flow in regions where the horizontal scale is much larger than the vertical depth. Applications
 of the shallow water equations include the modelling of tides, tsunamis or atmospheric flows. In this talk, we will discuss a
@@ -69,7 +69,7 @@ computational chemistry software that is efficient and portable across high-perf
 
 ## Shamrock: Scaling SPH to Exascale for Astrophysics Using SYCL
 
-Author: **Timothée David--Cléris** {% orcid 0000-0001-6696-7917 %}
+Author: **Timothée David--Cléris** {% include orcid.html orcid="0000-0001-6696-7917" %}
 
 Shamrock is a native SYCL-based framework designed for numerical astrophysics on exascale architectures. Developed in C++17,
 Shamrock addresses the growing need for efficient and scalable solutions in hydrodynamical simulations for astrophysics. The core
