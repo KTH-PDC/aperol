@@ -15,7 +15,7 @@ that promotes performance portability and interoperability across diverse hardwa
 By fostering cross-disciplinary collaboration, the series aims to address the challenges posed by proprietary programming
 models and vendor lock-in.
 The presenters discuss best practices for developing maintainable, performant, and portable software using SYCL.
-Through open discussions and inter-disciplinary discussion,
+Through open and inter-disciplinary discussions,
 the series seeks to build an open software ecosystem that supports scientific innovation and reproducibility,
 ultimately contributing to the broader adoption of open standards in scientific computing and paving
 the way for sustainable performance-portability for the HPC codes.
@@ -27,6 +27,8 @@ and
 from
 [PDC Center for High Performance Computing at KTH Royal Institute of Technology](https://www.pdc.kth.se/).
 
-This summer, we will hold [a third minisimposium in the series]({% link _posts/2025-06-18-pasc-25.markdown %}) at [PASC'25 (June 16-18) in Brugg](https://pasc25.pasc-conference.org/).
+This summer, we will hold **[a third minisimposium in the series]({% link _posts/2025-06-18-pasc-25.markdown %}) at [PASC'25 (June 16-18) in Brugg](https://pasc25.pasc-conference.org/)**.
 We are inviting everyone interested to attend!
+
+The complete details, including abstract and presentation slides, are available on the corresponding minisymposium's page below:
 

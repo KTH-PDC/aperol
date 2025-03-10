@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "PASC'24"
+title: "Archive: PASC'24"
 date: 2024-06-04 16:00:00 +0200
 categories: minisymposium
 ---
