@@ -58,7 +58,7 @@ This presentation will share insights from deploying GROMACS with SYCL across bo
 setups, using Intel oneAPI DPC++ and AdaptiveCpp runtimes. We will explore the challenges encountered and the
 performance levels, underscoring SYCL's potential as an efficient GPU framework.
 
-[Slides](https://doi.org/10.6084/m9.figshare.28443740.v1)
+[Slides](https://doi.org/10.5281/zenodo.15187802)
 
 ## SYCLing Through the Portability Maze: Adventures in Scientific Application Migration with DPEcho and HemeLB
 
