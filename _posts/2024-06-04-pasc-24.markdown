@@ -62,7 +62,7 @@ performance levels, underscoring SYCL's potential as an efficient GPU framework.
 
 ## SYCLing Through the Portability Maze: Adventures in Scientific Application Migration with DPEcho and HemeLB
 
-Authors: **Salvatore Cielo** {% include orcid.html orcid="0000-0002-2019-8187" %}, Alexander Poeppl, Ivan Pribec, Ioannis Zacharoudiou
+Authors: **Salvatore Cielo** {% include orcid.html orcid="0000-0002-2019-8187" %}, Alexander Pöppl {% include orcid.html orcid="0000-0001-8527-2440" %}, Ivan Pribec {% include orcid.html orcid="0000-0001-8436-882X" %}, Ioannis Zacharoudiou
 
 In our presentation we explore the portability challenges and solutions encountered in adapting scientific applications to heterogeneous
 computing architectures using SYCL. To this end, we present two application porting efforts, HemeLB and DPEcho, spanning different
@@ -75,6 +75,8 @@ such as the human vasculature system. It cleverly overlaps communication and com
 systems. With a CUDA version already available, we pursued SYCL porting using the automatic Data Parallel C++ Compatibility (DPCT)
 tool, and then manually refactored sections of the code to account for differences between programming models. This resulted in a
 unified code tree which can execute on all major GPU architectures.
+
+[Slides](https://doi.org/10.5281/zenodo.15342064)
 
 ## Optimizing CRK-HACC for Performance Portability Using SYCL
 
