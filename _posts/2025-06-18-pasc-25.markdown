@@ -51,7 +51,7 @@ grids can be used to improve simulation performance.
 
 ## Experiences with using SYCL for NWChemEx on Exascale Supercomputers
 
-Author: **Abhishek Bagusetty**
+Authors: **Kevin Harms** {% include orcid.html orcid="0000-0002-3019-7532" %}, Abhishek Bagusetty {% include orcid.html orcid="0000-0002-9642-921X" %}
 
 The rise of exascale computing offers new possibilities for computational chemistry, particularly in modeling molecular systems. We
 examine the integration of the Coupled Cluster with Single, Double, and Perturbative Triple excitations (CCSD(T)) method within
