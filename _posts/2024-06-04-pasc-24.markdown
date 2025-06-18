@@ -42,6 +42,8 @@ We argue that community-driven projects such as AdaptiveCpp are crucial to avoid
 will show how developers and scientists can engage with AdaptiveCpp and participate in its development, and thus
 help shape it into the tool they want.
 
+[Slides](https://doi.org/10.5281/zenodo.15691718)
+
 ## GROMACS: Using SYCL for Performance and Portability at Scale
 
 Author: **Andrey Alekseenko** {% include orcid.html orcid="0000-0003-4906-7241" %}
