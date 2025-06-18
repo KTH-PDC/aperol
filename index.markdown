@@ -27,8 +27,8 @@ and
 from
 [PDC Center for High Performance Computing at KTH Royal Institute of Technology](https://www.pdc.kth.se/).
 
-This summer, we will hold **[a third minisimposium in the series]({% link _posts/2025-06-18-pasc-25.markdown %}) at [PASC'25 (June 16-18) in Brugg](https://pasc25.pasc-conference.org/)**.
-We are inviting everyone interested to attend!
+**[The third minisimposium in the series]({% link _posts/2025-06-18-pasc-25.markdown %}) was held at [PASC'25 (June 16-18) in Brugg](https://pasc25.pasc-conference.org/)**.
+We thank the speakers and all the attendees!
 
 The complete details, including abstract and presentation slides, are available on the corresponding minisymposium's page below:
 

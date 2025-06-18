@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Upcoming: PASC'25"
+title: "Archive: PASC'25"
 date: 2025-06-18 14:00:00 +0200
 categories: minisymposium
 ---
 
-The third minisymposium in the series will be organized at [PASC'25](https://pasc25.pasc-conference.org/) in a town of Brugg.
+The third minisymposium in the series was organized at [PASC'25](https://pasc25.pasc-conference.org/) in a town of Brugg.
 Featuring talks by Peter Thoman, Abhishek Bagusetty, Markus Büttner, and Timothée David--Cléris.
 
 ## Minisymposium abstract
