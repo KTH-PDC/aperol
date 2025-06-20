@@ -49,6 +49,8 @@ SYCL, what abstractions are necessary for different architectures, and highlight
 we briefly discuss energy efficiency for our code across the tested architectures and give a brief outlook on how block-structured
 grids can be used to improve simulation performance.
 
+[Slides](https://doi.org/10.5281/zenodo.15696159)
+
 ## Experiences with using SYCL for NWChemEx on Exascale Supercomputers
 
 Authors: **Kevin Harms** {% include orcid.html orcid="0000-0002-3019-7532" %}, Abhishek Bagusetty {% include orcid.html orcid="0000-0002-9642-921X" %}
