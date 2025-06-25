@@ -36,6 +36,8 @@ and its potential for enabling the rapid evaluation of different implementation 
 on a set of real-world use cases. Additionally, some SYCL software engineering best practices based on the Celerity development
 experience will be shared.
 
+[Slides](https://doi.org/10.5281/zenodo.15730770)
+
 ## Coastal Ocean Simulations with Unstructured and Block-Structured Grids on CPUs, GPUs, and FPGAs
 
 Authors: **Markus Büttner** {% include orcid.html orcid="0009-0004-7205-1357" %}, Christoph Alt {% include orcid.html orcid="0000-0001-8897-5205" %}, Tobias Kenter {% include orcid.html orcid="0000-0002-5088-0267" %}, Vadym Aizinger {% include orcid.html orcid="0000-0002-1061-3084" %}
