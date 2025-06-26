@@ -71,6 +71,8 @@ Benchmarks on DOE exascale systems demonstrate the efficiency and scalability of
 fully leverage exascale architectures for next-generation quantum chemistry. This work is a key step toward developing exascale-ready
 computational chemistry software that is efficient and portable across high-performance computing platforms.
 
+[Slides](https://doi.org/10.5281/zenodo.15748785)
+
 ## Shamrock: Scaling SPH to Exascale for Astrophysics Using SYCL
 
 Author: **Timothée David--Cléris** {% include orcid.html orcid="0000-0001-6696-7917" %}
