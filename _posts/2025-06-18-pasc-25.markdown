@@ -90,3 +90,5 @@ This presentation will introduce Shamrock, its use of SYCL, its performance acro
 behind our initial decision to develop the framework with the buffer/accessor model. We will also discuss our migration to the
 Unified Shared Memory (USM) model to achieve finer memory control and reduced latencies.
 
+[Slides](https://doi.org/10.5281/zenodo.17558861)
+
