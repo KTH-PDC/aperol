@@ -24,7 +24,6 @@ author: Andrey Alekseenko and Szilárd Páll
 # email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   The minisymposium for cross-disciplinary discussion on SYCL as an open standard for performance-portability in scientific high-performance computing, organized at PASC conference since 2023.
-tagline: Minisymposium at PASC
 baseurl: "/aperol" # the subpath of your site, e.g. /blog
 url: "https://kth-pdc.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
