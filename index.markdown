@@ -27,8 +27,8 @@ and
 from
 [PDC Center for High Performance Computing at KTH Royal Institute of Technology](https://www.pdc.kth.se/).
 
-**[The third minisimposium in the series]({{ site.baseurl }}{% link _posts/2025-06-18-pasc-25.markdown %}) was held at [PASC'25 (June 16-18) in Brugg](https://pasc25.pasc-conference.org/)**.
-We thank the speakers and all the attendees!
+**The fourth minisimposium in the series will be held at [PASC'26 (June 29-July 1) in Bern](https://pasc26.pasc-conference.org/)**.
+Stay tuned for further details!
 
 The complete details, including abstract and presentation slides, are available on the corresponding minisymposium's page below:
 
