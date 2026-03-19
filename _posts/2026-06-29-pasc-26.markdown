@@ -1,0 +1,83 @@
+---
+layout: post
+title: "Upcoming: PASC'26"
+date: 2026-06-29 08:00:00 +0200
+categories: minisymposium
+---
+
+The fourth minisymposium in the series will take place at [PASC'26](https://pasc26.pasc-conference.org/) in Bern.
+
+## Minisymposium abstract
+
+HPC and data-intensive computing now stand as the fourth pillar of science. However, as scientific discovery increasingly relies on complex, 
+heterogeneous architectures, primarily GPUs, proprietary programming models and vendor lock-in restrict portability and obscure the transparency 
+essential for reproducible and trustworthy science. SYCL is a vendor-agnostic, C++-based standard for heterogeneous computing with several mature 
+implementations for a wide range of hardware accelerators, offering a promising path towards portable and reproducible high-performance computing. As 
+an open standard, it promotes active, bidirectional interaction among all involved parties: hardware vendors, compiler and runtime developers, 
+standards committees, and application developers. This minisymposium fosters the dialogue between scientific application developers and SYCL 
+implementers, sharing experiences on using SYCL as a collaborative, open-software ecosystem for performance-portable accelerated computing. The aim 
+of this minisymposium is to contribute to the wider adoption of open standards across the scientific computing community.
+
+## Standardizing memory-centric computing: Experiences from SYCL and OneMCC
+
+Author: **Hyesun Hong** {% include orcid.html orcid="0000-0002-9908-005X" %}, Youngjoo Ko {% include orcid.html orcid="0000-0002-8774-7697" %}, Hanwoong Jung,  Seungwon Lee
+
+This talk presents our experience integrating Samsung's HBM-PIM into HPC applications using SYCL as a performance-portable programming model. We 
+first summarize our SYCL+HBM-PIM co-design work, illustrating how PIM kernels are exposed through vendor extensions while maintaining the overall 
+application structure in standard SYCL. This single-source approach enables consistent execution across PIM-enabled and conventional platforms, which 
+is vital for cross-validation and building scientific trust in results. We further describe the software interface extensions developed to provide a 
+common programming foundation for diverse PIM/PNM devices. Building on these research foundations, we briefly introduce the OneMCC initiative—a 
+collaborative effort with industry partners to standardize memory-centric computing interfaces—alongside our ongoing research into PIM directives 
+for standard C code. Together, these efforts outline a comprehensive roadmap toward a portable, interoperable, and reliable software ecosystem for 
+next-generation memory-centric HPC systems
+
+##  Improving Performance of Large-Scale SYCL Applications by Leveraging AdaptiveCpp's SSCP Compiler at the Example of GROMACS
+
+Authors: **Bálint Soproni** {% include orcid.html orcid="0009-0008-5867-6210" %}, Aksel Alpay {% include orcid.html orcid="0000-0003-1976-6375" %}
+
+AdaptiveCpp, a vendor independent, production ready, implementation of the SYCL standard, enables applications to target a wide range of hardware 
+architectures, including most recent accelerators from AMD, NVIDIA and Intel. The implementation provides multiple compilation paradigms, in 
+particular SSCP (single-source, single compiler pass) and SMCP (single-source, multiple compiler passes). Even though the default SSCP JIT compiler 
+of AdaptiveCpp delivers substantial speedups, systematic performance evaluations have focused mostly on small to medium-sized applications.
+
+In this talk, we present the results of introducing the AdaptiveCpp JIT compiler to a highly-optimized, production code base: GROMACS - a widely used 
+molecular dynamics software package that currently relies on SYCL and the AdaptiveCpp SMCP compiler to target AMD GPUs. We discuss the necessary code 
+changes for leveraging the SSCP compiler and evaluate the ported application across a variety of input problems covering common simulation scenarios 
+on MI210, MI300A, and MI300X AMD GPUs. We find that the SSCP JIT compiler outperforms the currently used SMCP AdaptiveCpp compiler in high-atom-count 
+workload configurations by up to 10-25% and increases the peak simulation throughput of each tested GPU by up to 10%, measured in terms of simulated 
+atoms per second.
+
+## An Overview of SYCL Applications in the Context of High Energy Physics at CERN
+
+Authors: **Aurora Perego** {% include orcid.html orcid="0009-0002-5210-6213" %}
+
+The High-Luminosity LHC upgrade will increase the instantaneous luminosity by up to a factor of three compared to the current value, with average 
+pile-up of around 200 interactions per bunch crossing. This will dramatically amplify the volume and complexity of data processed by the LHC 
+experiments and therefore also the computing requirements for online and offline reconstruction. To meet this challenge, experiments are increasingly 
+exploiting heterogeneous resources, offloading part of the simulation, reconstruction and data analysis to GPUs and other accelerators at CERN, on 
+the WLCG, and at external HPC facilities.
+
+In this context, performance-portable programming models like SYCL are essential to keep large code bases maintainable while targeting diverse 
+architectures and vendor ecosystems. At CERN and in the LHC collaborations, we have been evaluating SYCL as a common layer across several domains, 
+both as a direct programming model (e.g. via Intel oneAPI/DPC++) and as an enabling technology underneath portability layers and libraries used in 
+HEP software.
+
+This talk will present an overview of our experience with SYCL at CERN, covering use cases in reconstruction workflows for CMS and ATLAS, as well as 
+efforts in core HEP libraries, and summarising the main challenges and lessons learned.
+
+## Performance-Portable Extreme-Scale Virtual Screening on Heterogeneous HPC Systems
+
+Author: **Gianmarco Accordi** {% include orcid.html orcid="0000-0001-8023-2108" %}, Leonardo Beltrame {% include orcid.html orcid="0009-0006-5994-0170" %}, Davide Gadioli {% include orcid.html orcid="0000-0002-0143-0737" %}, Gianluca Palermo {% include orcid.html orcid="0000-0001-7955-8012" %}
+
+Virtual screening is an early stage of drug discovery that ranks a chemical library by estimating the interaction strength between drug 
+candidates and target proteins. Recent work demonstrate how increasing the number of candidates evaluated in-silico increases the probability of 
+finding promising drugs. Given its embarrassingly parallel nature and the computation effort required by extreme-scale virtual screening campaign, 
+high-performance computing (HPC) systems are the natural target platform. Modern HPC systems are characterized by hardware heterogeneity, where nodes 
+rely on accelerators from different vendors, raising functional and performance portability challenges. We present the evolution of LiGen, the 
+virtual screening engine of the EXSCALATE platform, toward performance-portable execution across GPU-based HPC systems. LiGen adopts a batched 
+strategy to exploit accelerator parallelism, combining architecture-aware workload partitioning with out-of-kernel optimizations that adapt execution 
+parameters to device characteristics. To further analyze portability aspects, we developed muDock, a molecular docking mini-application derived from 
+the widely used AutoDock implementation, preserving representative computational patterns while enabling cross-architecture performance evaluation. 
+Experimental results across GPU and CPU platforms analyze the impact of programming models and architectural features on achieved throughput and 
+efficiency.
+
