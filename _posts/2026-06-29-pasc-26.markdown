@@ -65,6 +65,8 @@ HEP software.
 This talk will present an overview of our experience with SYCL at CERN, covering use cases in reconstruction workflows for CMS and ATLAS, as well as 
 efforts in core HEP libraries, and summarising the main challenges and lessons learned.
 
+[Slides](https://doi.org/10.5281/zenodo.21065299)
+
 ## Performance-Portable Extreme-Scale Virtual Screening on Heterogeneous HPC Systems
 
 Author: **Gianmarco Accordi** {% include orcid.html orcid="0000-0001-8023-2108" %}, Leonardo Beltrame {% include orcid.html orcid="0009-0006-5994-0170" %}, Davide Gadioli {% include orcid.html orcid="0000-0002-0143-0737" %}, Gianluca Palermo {% include orcid.html orcid="0000-0001-7955-8012" %}

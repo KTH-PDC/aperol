@@ -27,8 +27,8 @@ and
 from
 [PDC Center for High Performance Computing at KTH Royal Institute of Technology](https://www.pdc.kth.se/).
 
-**The fourth minisimposium in the series will be held at [PASC'26 (June 29-July 1) in Bern](https://pasc26.pasc-conference.org/)**.
-Stay tuned for further details!
+**The fourth minisimposium in the series took place at [PASC'26](https://pasc26.pasc-conference.org/) in Bern on June 29, 2026**.
+Stay tuned for further updates!
 
 The complete details, including abstract and presentation slides, are available on the corresponding minisymposium's page below:
 
