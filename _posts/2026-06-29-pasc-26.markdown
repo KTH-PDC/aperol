@@ -18,20 +18,7 @@ standards committees, and application developers. This minisymposium fosters the
 implementers, sharing experiences on using SYCL as a collaborative, open-software ecosystem for performance-portable accelerated computing. The aim 
 of this minisymposium is to contribute to the wider adoption of open standards across the scientific computing community.
 
-## Standardizing memory-centric computing: Experiences from SYCL and OneMCC
-
-Author: **Hyesun Hong** {% include orcid.html orcid="0000-0002-9908-005X" %}, Youngjoo Ko {% include orcid.html orcid="0000-0002-8774-7697" %}, Hanwoong Jung,  Seungwon Lee
-
-This talk presents our experience integrating Samsung's HBM-PIM into HPC applications using SYCL as a performance-portable programming model. We 
-first summarize our SYCL+HBM-PIM co-design work, illustrating how PIM kernels are exposed through vendor extensions while maintaining the overall 
-application structure in standard SYCL. This single-source approach enables consistent execution across PIM-enabled and conventional platforms, which 
-is vital for cross-validation and building scientific trust in results. We further describe the software interface extensions developed to provide a 
-common programming foundation for diverse PIM/PNM devices. Building on these research foundations, we briefly introduce the OneMCC initiative—a 
-collaborative effort with industry partners to standardize memory-centric computing interfaces—alongside our ongoing research into PIM directives 
-for standard C code. Together, these efforts outline a comprehensive roadmap toward a portable, interoperable, and reliable software ecosystem for 
-next-generation memory-centric HPC systems
-
-##  Improving Performance of Large-Scale SYCL Applications by Leveraging AdaptiveCpp's SSCP Compiler at the Example of GROMACS
+## Improving Performance of Large-Scale SYCL Applications by Leveraging AdaptiveCpp's SSCP Compiler at the Example of GROMACS
 
 Authors: **Bálint Soproni** {% include orcid.html orcid="0009-0008-5867-6210" %}, Aksel Alpay {% include orcid.html orcid="0000-0003-1976-6375" %}
 
@@ -82,4 +69,19 @@ parameters to device characteristics. To further analyze portability aspects, we
 the widely used AutoDock implementation, preserving representative computational patterns while enabling cross-architecture performance evaluation. 
 Experimental results across GPU and CPU platforms analyze the impact of programming models and architectural features on achieved throughput and 
 efficiency.
+
+## Standardizing memory-centric computing: Experiences from SYCL and OneMCC
+
+Author: **Hyesun Hong** {% include orcid.html orcid="0000-0002-9908-005X" %}, Youngjoo Ko {% include orcid.html orcid="0000-0002-8774-7697" %}, Hanwoong Jung, Seungwon Lee
+
+This talk presents our experience integrating Samsung's HBM-PIM into HPC applications using SYCL as a performance-portable programming model. We 
+first summarize our SYCL+HBM-PIM co-design work, illustrating how PIM kernels are exposed through vendor extensions while maintaining the overall 
+application structure in standard SYCL. This single-source approach enables consistent execution across PIM-enabled and conventional platforms, which 
+is vital for cross-validation and building scientific trust in results. We further describe the software interface extensions developed to provide a 
+common programming foundation for diverse PIM/PNM devices. Building on these research foundations, we briefly introduce the OneMCC initiative—a 
+collaborative effort with industry partners to standardize memory-centric computing interfaces—alongside our ongoing research into PIM directives 
+for standard C code. Together, these efforts outline a comprehensive roadmap toward a portable, interoperable, and reliable software ecosystem for 
+next-generation memory-centric HPC systems.
+
+[Slides](https://doi.org/10.5281/zenodo.21096304)
 
