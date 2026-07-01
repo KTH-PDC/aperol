@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "Upcoming: PASC'26"
-date: 2026-06-29 08:00:00 +0200
+title: "Archive: PASC'26"
+date: 2026-06-29 13:30:00 +0200
 categories: minisymposium
 ---
 
-The fourth minisymposium in the series will take place at [PASC'26](https://pasc26.pasc-conference.org/) in Bern.
+The fourth minisymposium in the series took place at [PASC'26](https://pasc26.pasc-conference.org/) in Bern.
+Featuring talks by Bálint Soproni, Aurora Perego, Gianmarco Accordi, and Hyesun Hong.
 
 ## Minisymposium abstract
 
@@ -69,6 +70,8 @@ parameters to device characteristics. To further analyze portability aspects, we
 the widely used AutoDock implementation, preserving representative computational patterns while enabling cross-architecture performance evaluation. 
 Experimental results across GPU and CPU platforms analyze the impact of programming models and architectural features on achieved throughput and 
 efficiency.
+
+[Slides](https://doi.org/10.5281/zenodo.21072878)
 
 ## Standardizing memory-centric computing: Experiences from SYCL and OneMCC
 
